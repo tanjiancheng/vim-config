@@ -27,6 +27,9 @@ syntax on
 " 高亮当前行和列
 set cursorline
 
+" 括号自动补全
+inoremap { {<CR>}<ESC>O])'
+
 "vundle配置
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -40,6 +43,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree.git'
+Plugin 'morhetz/gruvbox'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -58,3 +62,6 @@ let g:tagbar_width=60
 map <F2> :NERDTreeToggle<CR>
 let NERDTreeWinSize=60
 
+" gruvbox配置
+set bg=dark           "设置背景为黑色
+colorscheme gruvbox   "设置主题为 gruvbox
