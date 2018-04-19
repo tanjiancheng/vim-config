@@ -33,6 +33,13 @@ set cursorline
 " 括号自动补全
 inoremap { {<CR>}<ESC>O])'
 
+" 支持鼠标定位
+set mouse=a
+
+" 常用快捷键配置
+nmap <Leader>w :w<CR>
+nmap <Leader>wq :wq<CR>
+
 "vundle配置
 set nocompatible              " be iMproved, required
 filetype off                  " required
