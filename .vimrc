@@ -1,3 +1,6 @@
+" 设置mapleader键
+let mapleader = "\<Space>"
+
 " 设置状态栏
 set laststatus=2
 set statusline=%F%m%r%h%w\ [%{&ff}\ %{(&fenc==\"\"?&enc:&fenc).(&bomb?\",BOM\":\"\")}]\ [ASC=\%03.3b]\ [HEX=\%02.2B]\ [%04l,%04v][%p%%]\ [LEN=%L]
@@ -44,6 +47,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'morhetz/gruvbox'
+Plugin 'tacahiroy/ctrlp-funky'
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } 
+Plugin 'junegunn/fzf.vim'
+Plugin 'rking/ag.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -65,3 +72,17 @@ let NERDTreeWinSize=60
 " gruvbox配置
 set bg=dark           "设置背景为黑色
 colorscheme gruvbox   "设置主题为 gruvbox
+
+
+" ctrlp-funky配置
+nnoremap <Leader>fu :CtrlPFunky<Cr>
+" narrow the list down with a word under cursor
+nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+let g:ctrlp_funky_syntax_highlight = 1
+let g:ctrlp_extensions = ['funky']
+
+" fzf配置
+nnoremap <silent>  <Leader>o :Files<CR>
+
+" ag配置
+nnoremap <Leader>ag :Ag<space>
