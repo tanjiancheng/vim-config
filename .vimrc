@@ -56,7 +56,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'morhetz/gruvbox'
 Plugin 'tacahiroy/ctrlp-funky'
-Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } 
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'junegunn/fzf.vim'
 Plugin 'rking/ag.vim'
 " All of your Plugins must be added before the following line
