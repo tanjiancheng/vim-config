@@ -31,7 +31,7 @@ syntax on
 set cursorline
 
 " 括号自动补全
-inoremap { {<CR>}<ESC>O])'
+inoremap { {<CR>}<ESC>O
 
 " 支持鼠标定位
 set mouse=a
