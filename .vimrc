@@ -21,6 +21,8 @@ set backspace=2
 " tab为4个空格
 set expandtab
 set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set autoindent
 autocmd FileType php set shiftwidth=4 | set expandtab | set tabstop=4 | set softtabstop=4
 
@@ -34,7 +36,7 @@ set cursorline
 inoremap { {<CR>}<ESC>O
 
 " 支持鼠标定位
-set mouse=a
+" set mouse=a
 
 " 常用快捷键配置
 nmap <Leader>w :w<CR>
