@@ -41,6 +41,7 @@ inoremap { {<CR>}<ESC>O
 " 常用快捷键配置
 nmap <Leader>w :w<CR>
 nmap <Leader>wq :wq<CR>
+nmap <Tab><Tab> <C-w><C-w><ESC>
 
 "vundle配置
 set nocompatible              " be iMproved, required
