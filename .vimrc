@@ -62,6 +62,7 @@ Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'junegunn/fzf.vim'
 Plugin 'rking/ag.vim'
+Plugin 'scrooloose/nerdcommenter'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -97,3 +98,7 @@ nnoremap <silent>  <Leader>o :Files<CR>
 
 " ag配置
 nnoremap <Leader>ag :Ag<space>
+
+" nerdcommenter配置
+" 注释的时候自动加个空格, 强迫症必配
+let g:NERDSpaceDelims=1
